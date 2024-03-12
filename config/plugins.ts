@@ -27,5 +27,27 @@ export default ({ env }) => ({
                 regenerateOnUpdate: true
             }
         },
-    }
+    },
+    slugify: {
+        enabled: true,
+        config: {
+            contentTypes: {
+                article: {
+                    field: 'slug',
+                    references: 'title',
+                },
+            },
+        },
+    },
+    "reading-time": {
+        enabled: true,
+        config: {
+            contentTypes: {
+                article: {
+                    field: 'readingTime',
+                    references: 'content',
+                },
+            },
+        },
+    },
 });

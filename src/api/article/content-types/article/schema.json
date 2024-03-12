@@ -4,21 +4,30 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "article"
+    "displayName": "article",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "text": {
+    "content": {
       "type": "richtext"
+    },
+    "slug": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "readingTime": {
+      "type": "string"
     },
     "title": {
       "type": "string",
       "required": true
     },
-    "slug": {
+    "subtitle": {
       "type": "string"
     }
   }
