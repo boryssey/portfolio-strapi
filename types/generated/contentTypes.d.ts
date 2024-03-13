@@ -379,6 +379,7 @@ export interface ApiArticleArticle extends Schema.CollectionType {
     readingTime: Attribute.String;
     title: Attribute.String & Attribute.Required;
     subtitle: Attribute.String;
+    preview: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
